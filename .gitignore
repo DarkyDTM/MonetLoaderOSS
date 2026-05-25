@@ -522,10 +522,8 @@ object_script.*.Debug
 moc_*.cpp
 moc_*.h
 qrc_*.cpp
-ui_*.h
 *.qmlc
 *.jsc
-Makefile*
 *build-*
 *.qm
 *.prl
@@ -577,10 +575,7 @@ mono_crash.*
 x64/
 x86/
 [Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
 bld/
-[Bb]in/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
