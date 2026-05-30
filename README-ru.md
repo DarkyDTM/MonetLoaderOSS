@@ -1,20 +1,20 @@
 # MonetLoader 3.8.0
-A Lua script loader for GTA: San Andreas (and SAMP) on Android.<br>
-Main goal - compatibility with PC MoonLoader (as far as Mobile allows it).
+Загрузчик Lua скриптов для GTA: San Andreas (и SAMP) на Android<br>
+Главняа цель - совместимость с ПК MoonLoader'ом (насколько это позволяет мобильная платформа)
 
-## Source layout:
-1. `cpp` - Main MonetLoader code.
-   * `game` - GTA and SAMP stuff.
-   * `gui` - ImGui, input and script rendering framework.
-   * `hook` - MonetHook hooking library.
-   * `script` - Main script runtime implementation, `script/modules` contains packaged into MonetLoader modules.
-   * `utils` - Various utility.
-2. `dist` - Lua redistributable libraries.
-3. `example` - Example MonetLoader scripts.
-4. `lib` - Third-party code.
+## Структура сурсов:
+1. `cpp` - Основной код MonetLoader
+   * `game` - Код для GTA и SAMP.
+   * `gui` - Фреймворк для ввода, ImGui и рендеринга скриптов.
+   * `hook` - библиотека MonetHook для хуков.
+   * `script` - Основная реализация рантайма. `script/modules` содержит упакованные в MonetLoader модули.
+   * `utils` - Различные утилиты.
+2. `dist` - Lua библиотеки для дистрибьюции.
+3. `example` - Примеры скриптов для Monetloader.
+4. `lib` - Код от третьих лиц.
 
-## Installation:
-1. Setup NDK environment (toolchain, ANDROID_ABI, ANDROID_PLATFORM, ANDROID_STL).
-2. Load the root CMakeLists.txt, wait for it to configure and build.
-3. Ship generated libmonetloader.so together with respective Lua binary from lib/lua/bin.
-4. Copy data from `dist` and scripts into `Android/media/<package name>` at external storage.
+## Установка
+1. Настройте окружение NDK (тулчейн, ANDROID-ABI, ANDROID-PLATFORM, ANDROID-STL).
+2. Загрузите CMakeLists.txt в корне репозитория, дождитесь его настройки и сборки.
+3. Положите сгенерированный libmonetloader.so рядом с нужным бинарником Lua из lib/lua/bin
+4. Скопируйте данные и скрипты из `dist ` в `Android/media<имя пакета>` на внешнем накопителе
