@@ -1,3 +1,6 @@
+[English](/README.md)
+[Русский](/README-ru.md)
+
 # MonetLoader 3.8.0
 Загрузчик Lua скриптов для GTA: San Andreas (и SAMP) на Android<br>
 Главняа цель - совместимость с ПК MoonLoader'ом (насколько это позволяет мобильная платформа)
